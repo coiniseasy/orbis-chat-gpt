@@ -181,7 +181,7 @@ export default function ConversationDetails({selectedConv, setSelectedConv, conv
         body: JSON.stringify(_promptData),
         headers: {
           "Content-Type": "application/json",
-          'Authorization': "Bearer " + "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",
+          'Authorization': "Bearer " + process.env.NEXT_PUBLIC_OPEN_AI_KEY,
           'OpenAI-Organization': 'org-lxESgWKgBRJuQgfwrozZGFsa'
         },
       onopen(res) {
